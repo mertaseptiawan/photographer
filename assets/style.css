@@ -144,6 +144,7 @@ nav a {
 #about {
     background-color: white;
     padding: 40px;
+    justify-content: center;
 }
 
 .about-row {
@@ -151,9 +152,13 @@ nav a {
 }
 
 .about-row-column1 {
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(images/schedule.jpg);
+    width: 50%;
+    background-size: cover;
+}
+
+.about-row-column2 {
+    width: 50%;
+    line-height: 40px;
+    margin-left: 30px;
 }
