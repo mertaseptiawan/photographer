@@ -122,6 +122,8 @@ nav a {
 
 .card-image {
     background-image: url(images/photoshoot-card.jpeg);
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 200px;
     border-radius: 10px 10px 0  0;
@@ -155,6 +157,7 @@ nav a {
     background-image: url(images/schedule.jpg);
     width: 50%;
     background-size: cover;
+    background-position: center;
 }
 
 .about-row-column2 {
@@ -162,3 +165,43 @@ nav a {
     line-height: 40px;
     margin-left: 30px;
 }
+
+    /* Team */
+.team {
+    margin: 40px;
+}
+
+.team-title {
+    text-align: center;
+}
+
+.team-card {
+    text-align: center;
+    width: 20%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team-card-image {
+    background-image: url(images/team1.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.team-card-detail {
+    line-height: 5px;
+}
+
+.team-card-detail h6 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* .team-card {
+    text-align: center;
+    justify-content: center;
+} */
+
