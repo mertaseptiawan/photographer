@@ -271,6 +271,48 @@ footer {
     display: flex;
 }
 
+.contact-info-location, .contact-info-email, .contact-info-whatsapp, .contact-info-instagram {
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.contact-location-icon {
+    background-image: url(images/location-icon.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.contact-email-icon {
+    background-image: url(images/email-icon.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.contact-instagram-icon {
+    background-image: url(images/instagram-icon.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.contact-whatsapp-icon {
+    background-image: url(images/whatsapp-icon.png);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
 .contact-info, .contact-form {
     width: 50%;
     margin: 50px;
