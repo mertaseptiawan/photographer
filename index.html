@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -31,15 +30,15 @@
 
         <div id="service">
             <h1>Service</h1>
-            <div class="row1">
-                <div class="column1"></div>
-                <div class="column2">
+            <div class="service-row1">
+                <div class="service-column1"></div>
+                <div class="service-column2">
                     <h2>PhotoShoot</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                     <button>Order Now</button>
                 </div>
             </div>
-            <div class="row2">
+            <!-- <div class="row2">
                 <div class="column1">
                     <h2>column 3</h2>
                     <p>test</p>
@@ -48,7 +47,7 @@
                     <h2>column 4</h2>
                     <p>test</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div id="portofolio">
@@ -95,61 +94,79 @@
             </div>
         </div>
 
-        <!-- <div class="team">
+        <div id="team">
             <div class="team-title">
                 <h1>Our Team</h1>
             </div>
-            <div class="glider">
-                <div>slide 1</div>
-                <div>slide 2</div>
-                <div>slide 3</div>
-                <div>slide 4</div>
-            </div>
-            <div id="dots"></div>
-            <a class="glider-prev">&laquo;</a>
-            <a class="glider-next">&raquo;</a>
-        </div> -->
+            <button class="pre-btn"><img src="assets/images/prev-arr.png" alt="&laquo;"></button>
+            <button class="next-btn"><img src="assets/images/next-arr.png" alt="&raquo;"></button>
 
-        <div class="team">
-            <div class="team-title">
-                <h1>Our Team</h1>
-            </div>
-            <div class="glider-container swiper myswiper">
-                <div class="glider">
-                    <div class="team-card-wrapper swiper-wrapper">
-                        <div class="team-card">
-                            <div class="team-card-image"></div>
-                            <div class="team-card-detail">
-                                <h3>Your Name</h3>
-                                <h6>photographer</h6>
-                            </div>
-                            <button class="team-card-button">more</button>
-                        </div>
-
-                        <div class="team-card">
-                            <div class="team-card-image"></div>
-                            <div class="team-card-detail">
-                                <h3>Your Name</h3>
-                                <h6>photographer</h6>
-                            </div>
-                            <button class="team-card-button">more</button>
-                        </div>
-
-                        <div class="team-card">
-                            <div class="team-card-image"></div>
-                            <div class="team-card-detail">
-                                <h3>Your Name</h3>
-                                <h6>photographer</h6>
-                            </div>
-                            <button class="team-card-button">more</button>
-                        </div>
+            <div class="team-container">
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-image"></div>
+                    <div class="team-card-detail">
+                        <h3>Your Name</h3>
+                        <h6>Photographer</h6>
+                    </div>
+                    <button>More</button>
                 </div>
             </div>
-            
         </div>
 
         <div class="order">
@@ -239,7 +256,7 @@
                             </div>
                             <div class="contact-form-email">
                                 <label for="cEmail">Email</label><br>
-                                <input type="text" id="cEmail" name="cEmail" style="width: 100%;">
+                                <input type="email" id="cEmail" name="cEmail" style="width: 100%;">
                             </div>
                             <div class="contact-form-message">
                                 <label for="cMessage">What can we help you?</label><br>
@@ -253,6 +270,5 @@
         </div>
     </footer>
     <script src="assets/script.js"></script>
-    <script src="assets/swiper-bundle.min.js"></script>
 </body>
 </html>
