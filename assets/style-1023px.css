@@ -1,0 +1,54 @@
+@media screen and (max-width: 1023px) {
+    /* service */
+#service {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.service-row1 .service-column2 p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    /* about */
+.about-row-column2 {
+    width: 50%;
+    line-height: 25px;
+    margin-left: 30px;
+}
+
+.about-row-column2 p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+    /* order */
+.order-column1 {
+    width: 50%;
+    padding: 10px;
+}
+
+.order-column1 h1 {
+    margin-left: 10px;
+}
+
+.column-contain {
+    margin: 30px;
+}
+
+.order label {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.order input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid;
+}
+
+}

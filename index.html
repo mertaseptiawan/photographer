@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style-1023px.css">
+    <link rel="stylesheet" href="assets/style-912px.css">
 </head>
 <body>
     <header>
         <div class="logo">Company Logo</div>
-        <div class="nav">
+        <div class="nav h-5 max-w-full bg-slate-500">
                 <input id="menu-toggle" type="checkbox" />
                 <label class='menu-button-container' for="menu-toggle">
                     <div class='menu-button'></div>
                 </label>
             <nav>
-                <ul class="menu">
+                <ul class="menu inline">
                     <li><a href="#">Home</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#portofolio">Portofolio</a></li>
@@ -38,7 +40,7 @@
                 <div class="service-column2">
                     <h2>PhotoShoot</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button>Order Now</button>
+                    <button onclick="">Order Now</button>
                 </div>
             </div>
             <!-- <div class="row2">
@@ -111,7 +113,12 @@
                         <h3>Your Name</h3>
                         <h6>Photographer</h6>
                     </div>
-                    <button>More</button>
+                    <div class="team-contact">
+                        <button class="ig"></button>
+                        <button class="fb"></button>
+                        <button class="in"></button>
+                        <button class="tw"></button>
+                    </div>
                 </div>
                 <div class="team-card">
                     <div class="team-card-image"></div>
@@ -172,7 +179,7 @@
             </div>
         </div>
 
-        <div class="order">
+        <div id="order">
             <div class="order-row">
                 <div class="order-column1">
                     <h1>Schedule A Session</h1>
@@ -200,7 +207,7 @@
                                 </datalist>
                         </div>
                         <div class="date column-contain">
-                            <label for="date">Date</label>
+                            <label for="date">Date</label><br>
                             <input type="date" id="date" name="date">
                         </div>
                         <div class="message column-contain">
