@@ -14,3 +14,18 @@ productContainers.forEach((item, i) => {
         item.scrollLeft += containerWidth;
     })
 })
+
+
+const observe = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hidenElements = document.querySelectorAll('.hidden');
+hidenElements.forEach((el) => observe.observe(el));

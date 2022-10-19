@@ -33,6 +33,11 @@ header {
     padding: 0 4px;
 }
 
+article {
+    margin: 40px;
+    line-height: 2;
+}
+
 /* order */
 .order-row {
     display: flex;
