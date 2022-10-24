@@ -15,6 +15,10 @@ header {
     margin: 40px;
 }
 
+header h2 {
+    margin-bottom: 20px;
+}
+
 .jumbotron {
     background-image: url(images/photoshoot-card.jpeg);
     background-size: cover;
@@ -204,20 +208,34 @@ vertical-align: middle;
 width: 100%;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 .column {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
 }
-}
+} */
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
 }
-}
+} */

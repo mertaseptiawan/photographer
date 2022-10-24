@@ -43,9 +43,13 @@ header {
     align-items: center;
 }
 
-#menu-toggle {
-    display: none;
+.hamburger-input {
+    visibility: hidden;
 }
+
+/* #menu-toggle {
+    display: none;
+} */
 
 /* .menu-button,
 .menu-button::before,
@@ -85,8 +89,7 @@ transform: rotate(-405deg);
 
 nav {
     margin: 1.3em;
-    text-align: right;
-    position: sticky;
+    float: right;
 }
 
 nav li {
@@ -100,14 +103,13 @@ nav a {
     color: black;
     font-size: 1em;
     font-weight: bold;
-    margin-left: 1.5em;
 }
 
 nav a:hover {
     color: grey;
 }
 
-/* .menu {
+.menu {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -129,10 +131,10 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-
+/* 
 #menu-toggle {
 display: none;
-}
+} */
 
 .menu-button,
 .menu-button::before,
@@ -168,7 +170,7 @@ background: rgba(255, 255, 255, 0);
 #menu-toggle:checked + .menu-button-container .menu-button::after {
 margin-top: 0px;
 transform: rotate(-405deg);
-} */
+}
 
     /* main */
 .jumbotron {
