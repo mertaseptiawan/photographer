@@ -125,16 +125,6 @@ nav a {
      margin-left: 60px;
      margin-right: 60px;
  }
-
- .team-card-image {
-     background-image: url(images/team1.jpg);
-     height: 150px;
-     background-size: cover;
-     background-position: center;
-     border-radius: 10px;
-     margin-bottom: 20px;
-     position: relative;
- }
  
  .team-card {
      flex: 0 0 auto;
@@ -148,12 +138,16 @@ nav a {
      margin: 10px;
  }
  
- .team-card button {
-     width: 100px;
+ .team-contact button {
+     width: 50px;
      height: 30px;
-     background-color: black;
      color: white;
-     margin-top: 15px;
+     margin-top: 6px;
+     margin-bottom: 6px;
+ }
+
+ .team-contact button img {
+    width: 20px;
  }
 
      /* order */

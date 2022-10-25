@@ -121,8 +121,12 @@
     }
 
         /* portofolio */
+    #portofolio .card-image img {
+        height: 300px;
+    }
+
     #portofolio .card {
-        height: fit-content;
+        height: auto;
     }
 
     #portofolio .card-title {
@@ -132,5 +136,20 @@
         /* about */
     #about .about-row {
         flex-direction: column;
+    }
+
+    .about-row-column1,
+    .about-row-column2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+        /* order */
+    .order-row {
+        flex-direction: column-reverse;
+    }
+
+    .order-column1 {
+        width: 100%;
     }
 }

@@ -173,8 +173,9 @@ transform: rotate(-405deg);
 
 .card-image img {
     width: 100%;
+    height: 170px;
     background-position: center;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 10px 10px 0  0;
 }
 
@@ -207,10 +208,13 @@ transform: rotate(-405deg);
 }
 
 .about-row-column1 {
-    background-image: url(images/about-logo.png);
     width: 50%;
     background-size: cover;
     background-position: center;
+}
+
+.about-row-column1 img {
+    width: 100%;
 }
 
 .about-row-column2 {
@@ -260,14 +264,11 @@ transform: rotate(-405deg);
 .team-container::-webkit-scrollbar {
     display: none;
 }
-.team-card-image {
-    background-image: url(images/team1.jpg);
+
+.team-card-image img {
+    width: 100%;
     height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    position: relative;
+    object-fit: cover;
 }
 
 .team-card {
@@ -293,58 +294,50 @@ transform: rotate(-405deg);
     margin-top: 10px;
 }
 
-.team-contact .ig {
+.team-contact .ig img {
     height: 40px;
     width: 40px;
-    background-image: url(images/instagram2-icon.png);
-    background-size: cover;
-    margin: 5px;
-    border-radius: 50px;
+    object-fit: cover;
     opacity: 60%;
 }
 
-.team-contact .ig:hover {
+.team-contact .ig img:hover {
     opacity: 100%;
 }
 
-.team-contact .fb {
+.team-contact .fb img {
     height: 40px;
     width: 40px;
-    background-image: url(images/facebook2-icon.png);
-    background-size: cover;
-    margin: 5px;
+    object-fit: cover;
     opacity: 60%;
 }
 
-.team-contact .fb:hover {
+.team-contact .fb img:hover {
     opacity: 100%;
 }
 
-.team-contact .in {
+.team-contact .in img {
     height: 40px;
     width: 40px;
-    background-image: url(images/lingkedin-icon.png);
-    background-size: cover;
-    margin: 5px;
+    object-fit: cover;
     opacity: 60%;
 }
 
-.team-contact .in:hover {
+.team-contact .in img:hover {
     opacity: 100%;
 }
 
-.team-contact .tw {
+.team-contact .tw img {
     height: 40px;
     width: 40px;
-    background-image: url(images/twitter-icon.png);
-    background-size: cover;
-    margin: 5px;
+    object-fit: cover;
     opacity: 60%;
 }
 
-.team-contact .tw:hover {
+.team-contact .tw img:hover {
     opacity: 100%;
 }
+
 
     /* order */
 .order-row {
@@ -381,12 +374,10 @@ transform: rotate(-405deg);
     border-bottom: 1px solid;
 }
 
-.order-column2 {
-    background-image: url(images/schedule.png);
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    margin: 10px;
+.order-column2 img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .order-button {
@@ -424,39 +415,35 @@ footer {
     font-size: small;
 }
 
-.contact-location-icon {
-    background-image: url(images/location-icon.png);
+.contact-location-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
-.contact-email-icon {
-    background-image: url(images/email-icon.png);
+.contact-email-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
-.contact-instagram-icon {
-    background-image: url(images/instagram-icon.png);
+.contact-instagram-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
-.contact-whatsapp-icon {
-    background-image: url(images/whatsapp-icon.png);
+.contact-whatsapp-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
