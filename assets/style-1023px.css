@@ -1,4 +1,7 @@
 @media screen and (max-width: 1023px) {
+.menu-toggle {
+    height: 0;
+}
     /* service */
 #service {
     text-align: center;

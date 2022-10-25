@@ -10,70 +10,53 @@
     <link rel="stylesheet" href="assets/style-912px.css">
     <link rel="stylesheet" href="assets/style-820px.css">
     <link rel="stylesheet" href="assets/style-700px.css">
-    <link rel="stylesheet" href="assets/style-576px.css">
+    <!-- <link rel="stylesheet" href="assets/style-576px.css"> -->
 </head>
 <body>
     <header>
         <div class="logo">Company Logo</div>
-        <div class="nav">
-            <label>
-                <input type="checkbox" class="hamburger-input">
-                <span class="menu"></span>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#portofolio">Portofolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </label>
-                <!-- <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label> -->
-            <!-- <nav>
-                <ul class="menu inline">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#portofolio">Portofolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav> -->
-        </div>
+        <nav>
+            <ul class="menu inline">
+                <li><a href="#">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
     <main>
         <div class="jumbotron">
-            <!-- <img src="assets/images/jumbotron.jpg" alt=""> -->
+            <img src="assets/images/jumbotron.jpg" alt="">
         </div>
 
-        <div id="service" class="hidden">
+        <div id="service">
             <h1>Service</h1>
             <div class="service-row1">
-                <div class="service-column1"></div>
+                <div class="service-column1">
+                    <img src="assets/images/photoshoot-service.jpg" alt="">
+                </div>
                 <div class="service-column2">
                     <h2>PhotoShoot</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                    <button onclick="">Order Now</button>
+                    <button><a href="#order"></a>Order Now</button>
                 </div>
             </div>
-            <!-- <div class="row2">
-                <div class="column1">
-                    <h2>column 3</h2>
-                    <p>test</p>
-                </div>
-                <div class="column2">
-                    <h2>column 4</h2>
-                    <p>test</p>
-                </div>
-            </div> -->
         </div>
 
-        <div id="portofolio" class="hidden">
+        <div id="portofolio">
             <h1>Our Portofolio</h1>
             <div class="portofolio-card">
                 <div class="card">
-                    <div class="card-image"></div>
+                    <div class="card-image">
+                        <img src="assets/images/photoshoot-card.jpeg" alt="image-card">
+                    </div>
                     <div class="card-title">
                         <h3>PhotoShoot</h3>
                         <a href="portofolio.html">
@@ -84,7 +67,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image"></div>
+                    <div class="card-image">
+                        <img src="assets/images/photoshoot-card.jpeg" alt="image-card">
+                    </div>
                     <div class="card-title">
                         <h3>PhotoShoot</h3>
                         <button>More</button>
@@ -92,7 +77,9 @@
                 </div>
 
                 <div class="card">
-                    <div class="card-image"></div>
+                    <div class="card-image">
+                        <img src="assets/images/photoshoot-card.jpeg" alt="image-card">
+                    </div>
                     <div class="card-title">
                         <h3>PhotoShoot</h3>
                         <button>More</button>
@@ -103,7 +90,7 @@
             
         </div>
 
-        <div id="about" class="hidden">
+        <div id="about">
             <div class="about-row">
                 <div class="about-row-column1"></div>
                 <div class="about-row-column2">
@@ -116,7 +103,7 @@
             </div>
         </div>
 
-        <div id="team" class="hidden">
+        <div id="team">
             <div class="team-title">
                 <h1>Our Team</h1>
             </div>
@@ -204,7 +191,7 @@
             </div>
         </div>
 
-        <div id="order" class="hidden">
+        <div id="order">
             <div class="order-row">
                 <div class="order-column1">
                     <h1>Schedule A Session</h1>

@@ -15,17 +15,9 @@ productContainers.forEach((item, i) => {
     })
 })
 
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
 
-const observe = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
-    });
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('slide');
 });
-
-const hidenElements = document.querySelectorAll('.hidden');
-hidenElements.forEach((el) => observe.observe(el));
