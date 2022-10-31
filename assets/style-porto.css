@@ -19,20 +19,17 @@ header h2 {
     margin-bottom: 20px;
 }
 
-.jumbotron {
-    background-image: url(images/photoshoot-card.jpeg);
-    background-size: cover;
+.jumbotron img {
     width: 100%;
-    height: 500px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
     /* main */
 .row {
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
 }
@@ -77,12 +74,10 @@ article {
     border-bottom: 1px solid;
 }
 
-.order-column2 {
-    background-image: url(images/schedule.png);
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    margin: 10px;
+.order-column2 img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .order-button {
@@ -99,7 +94,6 @@ article {
 .order-button:hover {
     background-color: #444;
 }
-
     /* footer */
 footer {
     background-color: black;
@@ -120,39 +114,35 @@ footer {
     font-size: small;
 }
 
-.contact-location-icon {
-    background-image: url(images/location-icon.png);
+.contact-location-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
-.contact-email-icon {
-    background-image: url(images/email-icon.png);
+.contact-email-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
-.contact-instagram-icon {
-    background-image: url(images/instagram-icon.png);
+.contact-instagram-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
-.contact-whatsapp-icon {
-    background-image: url(images/whatsapp-icon.png);
+.contact-whatsapp-icon img {
     height: 30px;
     width: 30px;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
     margin-right: 20px;
 }
 
@@ -193,7 +183,6 @@ footer {
     color: aliceblue;
 }
 
-
 /* Create four equal columns that sits next to each other */
 .column {
 -ms-flex: 25%; /* IE10 */
@@ -208,34 +197,8 @@ vertical-align: middle;
 width: 100%;
 }
 
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* @media screen and (max-width: 800px) {
-.column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-}
-} */
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-.column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-}
-} */

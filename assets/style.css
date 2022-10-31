@@ -151,15 +151,16 @@ transform: rotate(-405deg);
     justify-content: center;
 }
 
-.portofolio-card {
+.portofolio-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card {
     background-color: green;
     margin: 25px;
-    width: 30%;
+    width: 25%;
     border-radius: 10px;
     text-align: left;
     background-color: white;

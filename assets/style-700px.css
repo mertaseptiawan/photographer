@@ -15,7 +15,7 @@
         z-index: -99;
         /* visibility: hidden; */
         transform: translateY(-150%);
-        transition: all 1s;
+        transition: all 0.5s;
         opacity: 0;
     }
 
@@ -101,17 +101,6 @@
         width: 90%;
     }
 
-    .portofolio-card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .portofolio-card .card {
-        width: 90%;
-        align-items: center;
-        height: 30rem;
-    }
-
     #portofolio h1,
     #about h1,
     #team h1,
@@ -123,6 +112,17 @@
         /* portofolio */
     #portofolio .card-image img {
         height: 300px;
+    }
+
+    .portofolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portofolio-container .card {
+        width: 90%;
+        align-items: center;
+        height: 30rem;
     }
 
     #portofolio .card {
@@ -150,6 +150,17 @@
     }
 
     .order-column1 {
+        width: 100%;
+    }
+
+        /* footer */
+    .footer-row {
+        display: block;
+    }
+    
+    .contact-info, .contact-form {
+        margin: 0;
+        padding: 30px;
         width: 100%;
     }
 }
