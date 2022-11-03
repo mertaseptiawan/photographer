@@ -55,13 +55,13 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(66, 66, 66); 
     font-size: 1em;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: grey;
+    color: black;
 }
 
 .menu {
@@ -84,11 +84,11 @@ transform: rotate(-405deg);
 
     /* main */
 .jumbotron {
-    height: 200px;
+    height: 100%;
 }
 
 .jumbotron img {
-    height: 30rem;
+    height: 40rem;
     width: 100%;
     background-position: center;
     object-fit: cover;
@@ -101,13 +101,21 @@ transform: rotate(-405deg);
     background-color: white;
 }
 
-.service-row1, .service-row2 {
+.service-row1 {
     display: flex;
     justify-content: center;
 }
 
 .service-column1, .service-column2 {
     margin: 50px;
+}
+
+.service-row1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-row1:hover .service-column2 h2 {
+    color: black;
 }
 
 .service-column1 img {
@@ -125,6 +133,7 @@ transform: rotate(-405deg);
 .service-row1 .service-column2 {
     width: 50%;
     text-align: left;
+    color: rgb(66, 66, 66); 
 }
 
 .service-row1 .service-column2 p {
@@ -138,6 +147,7 @@ transform: rotate(-405deg);
     width: 110px;
     height: 40px;
     border-radius: 20px;
+    border: none;
 }
 
 .service-row1 .service-column2 button:hover {
@@ -157,13 +167,19 @@ transform: rotate(-405deg);
     justify-content: space-evenly;
 }
 
-.card {
+.portofolio-container .card {
     background-color: green;
     margin: 25px;
     width: 25%;
     border-radius: 10px;
     text-align: left;
     background-color: white;
+    color: rgb(66, 66, 66); 
+}
+
+.portofolio-container .card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black; 
 }
 
 .card-image {
@@ -191,6 +207,7 @@ transform: rotate(-405deg);
     height: 40px;
     border-radius: 20px;
     margin-top: 2em;
+    border: none;
 }
 
 .card button:hover {
@@ -223,8 +240,6 @@ transform: rotate(-405deg);
     line-height: 40px;
     margin-left: 30px;
 }
-
-
 
     /* Team */
 .team-title {
@@ -284,6 +299,10 @@ transform: rotate(-405deg);
     margin: 10px;
 }
 
+.team-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .team-contact button {
     background-color: transparent;
     border: none;
@@ -339,7 +358,6 @@ transform: rotate(-405deg);
     opacity: 100%;
 }
 
-
     /* order */
 .order-row {
     display: flex;
@@ -390,6 +408,7 @@ transform: rotate(-405deg);
     float: right;
     margin-right: 30px;
     border-radius: 20px;
+    border: none;
 }
 
 .order-button:hover {
@@ -485,21 +504,28 @@ footer {
     color: aliceblue;
 }
 
-.hidden {
+.hidden-left {
     opacity: 0;
-    filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 0.5s ease-in-out;
 }
 
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 0.5s ease-in-out;
+}
 
 .show {
     opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+    transform: scale(1);
 }
-
-    /* responsive */
 
 @media screen and (min-width: 701px) {
     .menu-toggle {
