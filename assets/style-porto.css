@@ -29,10 +29,31 @@ header h2 {
 }
 
     /* main */
-.row {
+.container {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+article h1 {
+    text-align: center;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.galery img {
+    width: 100%;
+}
+
+.galery > img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 article {
@@ -61,6 +82,7 @@ article {
 
 .column-contain {
     margin: 30px;
+    justify-items: center;
 }
 
 .order label {
@@ -188,6 +210,7 @@ footer {
 .column {
 -ms-flex: 25%; /* IE10 */
 flex: 25%;
+display: flex;
 max-width: 25%;
 padding: 0 4px;
 }
@@ -198,8 +221,19 @@ vertical-align: middle;
 width: 100%;
 }
 
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 0.5s ease-in-out;
+}
+
 .show {
     opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+    transform: scale(1);
 }

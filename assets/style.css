@@ -27,6 +27,7 @@ header {
     background-color: #EFEFEF;
     padding: .2rem;
     height: 4rem;
+    width: 100%;
     position: sticky;
     top: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -175,11 +176,12 @@ transform: rotate(-405deg);
     text-align: left;
     background-color: white;
     color: rgb(66, 66, 66); 
+    transition: all 1s;
 }
 
 .portofolio-container .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: black; 
+    color: black;
 }
 
 .card-image {
@@ -314,39 +316,9 @@ transform: rotate(-405deg);
     margin-top: 10px;
 }
 
-.team-contact .ig img {
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
-    opacity: 60%;
-}
-
-.team-contact .ig img:hover {
-    opacity: 100%;
-}
-
-.team-contact .fb img {
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
-    opacity: 60%;
-}
-
-.team-contact .fb img:hover {
-    opacity: 100%;
-}
-
-.team-contact .in img {
-    height: 40px;
-    width: 40px;
-    object-fit: cover;
-    opacity: 60%;
-}
-
-.team-contact .in img:hover {
-    opacity: 100%;
-}
-
+.team-contact .ig img,
+.team-contact .fb img,
+.team-contact .in img,
 .team-contact .tw img {
     height: 40px;
     width: 40px;
@@ -354,6 +326,9 @@ transform: rotate(-405deg);
     opacity: 60%;
 }
 
+.team-contact .ig img:hover,
+.team-contact .fb img:hover,
+.team-contact .in img:hover,
 .team-contact .tw img:hover {
     opacity: 100%;
 }
@@ -512,7 +487,7 @@ footer {
 
 .hidden-right {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(20%);
     transition: all 0.5s ease-in-out;
 }
 

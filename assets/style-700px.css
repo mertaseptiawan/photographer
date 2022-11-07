@@ -139,6 +139,25 @@
         margin-left: 0;
     }
 
+        /* team */
+    .team-card {
+        width: 10rem;
+    }
+
+    .team-card img {
+        height: 10em;
+    }
+
+    .team-contact .ig img,
+    .team-contact .fb img,
+    .team-contact .in img,
+    .team-contact .tw img {
+        height: 2em;
+        width: 2em;
+        object-fit: cover;
+        opacity: 60%;
+    }
+
         /* order */
     .order-row {
         flex-direction: column-reverse;
